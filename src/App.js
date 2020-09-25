@@ -26,7 +26,6 @@ const foodLike = [
 function App() {
   return (
     <div>
-      <div>Hello</div>
       {foodLike.map(dish => 
       <food name={dish.name} />)}
     </div>
