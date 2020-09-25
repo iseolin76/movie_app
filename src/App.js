@@ -6,10 +6,10 @@ class App extends React.Component{
     count: 0
   };
   add = () => {
-    console.log("add");
+    this.setState(curret => ({count: curret.count +1}));
   };
   minus = () => {
-    console.log("minus");
+    this.setState(curret => ({count: curret.count -1}));
   };
   render() {
     return (
