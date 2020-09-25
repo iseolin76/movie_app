@@ -1,7 +1,12 @@
 import React from 'react';
 
-function Food({fav}){
-  return <h1>I like {fav}</h1>
+function Food({name, picture}){
+  return (
+    <div>
+      <h2>I like {name}</h2>
+      <p>{picture}</p>
+    </div>
+  )
 }
 
 const foodLike = [
@@ -27,7 +32,8 @@ function App() {
   return (
     <div>
       {foodLike.map(dish => 
-      <food name={dish.name} />)}
+        <Food name={dish.name} picture={dish.image} />
+      )}
     </div>
   );
 }
