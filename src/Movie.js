@@ -14,11 +14,6 @@ function Movie({ year, title, summary, poster, genres }) {
                 ))}
             </ul>
             <p className="movie__summary">{summary}</p>
-            <ul className="genres">
-                {genres.map(genre => (
-                    <li className="genres__genre">{genre}</li>
-                ))}
-            </ul>
         </div>
     </div>
 }
